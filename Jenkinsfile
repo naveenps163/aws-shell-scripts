@@ -4,8 +4,8 @@ pipeline {
     stage('Checkout & List S3 Buckets') {
       steps {
         checkout scm
-        sh 'chmod +x  aws-shell-scripts/list_s3.sh'
-        sh './aws-shell-scripts/list_s3.sh'
+        sh 'chmod +x list_s3.sh'
+        sh './list_s3.sh'
       }
     }
   }
